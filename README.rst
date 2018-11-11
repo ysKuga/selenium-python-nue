@@ -11,5 +11,5 @@ If you want to learn more about ``setup.py`` files, check out `this repository <
 
 ✨🍰✨
 
-.. code-block::none
+setup::
   python setup.py install
