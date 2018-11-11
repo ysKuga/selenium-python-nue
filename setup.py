@@ -21,5 +21,5 @@ setup(
     # url='https://github.com/kennethreitz/samplemod',
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),
-    install_requires=['selenium', 'pyyaml', 'docopt'],
+    install_requires=['selenium', 'pyyaml', 'docopt', 'doc8'],
 )
