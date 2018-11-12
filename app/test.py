@@ -1,18 +1,9 @@
 import sys
 import os
 import time
-from selenium import webdriver
-import chromedriver_binary
+from modules.driver import factory as driver_factory
 
-if not os.path.exists(chromedriver_binary.chromedriver_filename):
-    print('https://sites.google.com/a/chromium.org/chromedriver/downloads')
-    sys.exit()
-else:
-    print('ChromeDriver: [%s]' % chromedriver_binary.chromedriver_filename)
-
-driver = webdriver.Chrome(
-    executable_path=chromedriver_binary.chromedriver_filename
-)
+driver = driver_factory()
 
 driver.get('https://google.co.jp/')
 
