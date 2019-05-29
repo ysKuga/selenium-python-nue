@@ -9,7 +9,7 @@ driver = driver_factory()
 driver.get('https://google.co.jp/')
 
 element = element_factory(driver)
-element.find('//input[@id="lst-ib"]').send_keys('にょろ')
+element.find('//input[@title="検索"]').send_keys('にょろ')
 
 time.sleep(5)
 
